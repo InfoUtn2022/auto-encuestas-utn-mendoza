@@ -1,0 +1,24 @@
+/* Dark mode */
+@media (prefers-color-scheme: Dark) {
+    body,#offcanvasRight_1,.offcanvas, input, .card, .preloader_show {
+        background-color: #313131 !important;
+        color: white !important;
+    }
+    input{
+        border-color: white !important;
+    }
+    .card,.accordion-body{
+        background-color: #666666 !important;
+    }
+    .btn-close{
+        filter: invert(1)
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: Light) {
+    body, .offcanvas {
+        background-color: white;
+        color: #313131;
+    }
+}

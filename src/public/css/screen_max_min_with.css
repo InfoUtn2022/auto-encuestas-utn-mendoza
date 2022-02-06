@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1000px) {
+    .header{
+        margin-bottom: 25% !important;
+    };
+    .title{
+        margin-top: 15% !important;
+    }
+    .form-check-input, label, .btn-check {
+        margin-bottom: 10%;
+    }
+    .preloader_show{
+        
+        padding-top: 60%;
+    }
+}
+
+
+
