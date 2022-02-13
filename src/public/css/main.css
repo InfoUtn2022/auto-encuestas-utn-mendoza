@@ -7,7 +7,6 @@
     background-color: #8f6f19 !important;
     border-color: #313131 !important;
 }
-
 .info{
     margin-top: 0 !important;
     height: 75% !important;
@@ -15,20 +14,17 @@
     vertical-align: top;
     padding: 0;
 }
-
-
 .alert{
     margin-top: 15%;
 }
-
 img{
-    width: 100%;
-    height: 100vh;
+    width: 70vw;
+    height: auto;
 }
 footer {
     position:absolute;
     bottom:0;
     width:100%;
-    height: 4%;   /* Height of the footer */
+    height: 4%;
     text-align: center;
- }
+}
