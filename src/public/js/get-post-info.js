@@ -22,7 +22,6 @@ let string_post = '';
 
 // function to replace characters
 String.prototype.replaceAt = function(index, replacement) {return this.substr(0, index) + replacement + this.substr(index + replacement.length);};
-
 // get a list of topics that have surveys to complete and the info of the student
 async function get_info(url){
     let materias = [];
@@ -34,7 +33,7 @@ async function get_info(url){
     });
     let data = response.data.toString('binary'); // convert the binary into a string
     const $ = cheerio.load(data); // load the response (in string form) in cherio
-    if ($("span[class='title']").text() != 'Por favor Conteste las Siguientes Encuestas Docentes') { // if the loaded page don't have the "Por favor Conteste las Siguientes Encuestas Docentes" title, it means that the legajo inputed don't exist
+    if ($("span[class='title']").text().includes('Problemas')) { //  if the loaded page have the "Problemas" string in the title, it means that the legajo inputed don't exist                                
       return {error: `Numero de legajo invalido`}; // return a error with a text saying that the legajo is invalid
     } else {
       if ($('a').length < 1) {  // if the number of anchor tags is less than one it means that all the surveys are already completed
