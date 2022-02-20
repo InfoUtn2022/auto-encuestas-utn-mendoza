@@ -22,6 +22,7 @@ let string_post = '';
 
 // function to replace characters
 String.prototype.replaceAt = function(index, replacement) {return this.substr(0, index) + replacement + this.substr(index + replacement.length);};
+
 // get a list of topics that have surveys to complete and the info of the student
 async function get_info(url){
     let materias = [];
